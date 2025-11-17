@@ -18,7 +18,10 @@ const Login = () => {
         />
       </View>
       <View className="mt-10">
-        <Text className="text-[18px]">Password</Text>
+        <View className="flex-row justify-between">
+          <Text className="text-[18px]">Password</Text>
+          <Text className="text-[14px] text-[#666666]">Forgot password?</Text>
+        </View>
         <View className="flex-row justify-between">
           <TextInput
             placeholder="•••••••••••••••"
@@ -59,9 +62,11 @@ const Login = () => {
 
       <View className="flex-row justify-center gap-2 mt-6">
         <Text className="text-[16px] text-[#666666]">New Here?</Text>
-        <Text className="text-[16px] text-[#2673A6] font-semibold">
-          Create an Account
-        </Text>
+        <TouchableOpacity onPress={() => router.push("/(auth)/SignUp")}>
+          <Text className="text-[16px] text-[#2673A6] font-semibold">
+            Create an Account
+          </Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
