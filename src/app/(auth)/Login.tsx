@@ -42,7 +42,7 @@ const Login = () => {
       </View>
       <TouchableOpacity
         className="bg-[#3A95D2] rounded-full p-4 items-center mt-10"
-        onPress={() => router.push("/(auth)/Login")}
+        onPress={() => router.push("/(tabs)/Home")}
       >
         <Text className="font-bold text-[18px] text-white">Sign in</Text>
       </TouchableOpacity>
