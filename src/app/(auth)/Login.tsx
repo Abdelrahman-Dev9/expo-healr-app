@@ -20,7 +20,13 @@ const Login = () => {
       <View className="mt-10">
         <View className="flex-row justify-between">
           <Text className="text-[18px]">Password</Text>
-          <Text className="text-[14px] text-[#666666]">Forgot password?</Text>
+          <TouchableOpacity
+            onPress={() =>
+              router.push("/(auth)/forget-password/ForgetPassword")
+            }
+          >
+            <Text className="text-[14px] text-[#666666]">Forgot password?</Text>
+          </TouchableOpacity>
         </View>
         <View className="flex-row justify-between">
           <TextInput
