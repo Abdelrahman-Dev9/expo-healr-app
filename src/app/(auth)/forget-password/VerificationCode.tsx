@@ -46,9 +46,7 @@ const VerificationCode = () => {
         </View>
         <TouchableOpacity
           className="bg-[#B3B3B3] rounded-[10px] p-4 items-center mt-10"
-          onPress={() =>
-            router.push("/(auth)/forget-password/VerificationCode")
-          }
+          onPress={() => router.push("/(auth)/forget-password/NewPassword")}
         >
           <Text className="font-bold text-[18px] text-white">Verify</Text>
         </TouchableOpacity>
