@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import React from "react";
-import OnBoardingScreen from "components/OnBoardingScreen";
 import { useRouter } from "expo-router";
+import OnBoardingScreen from "@/components/OnBoardingScreen";
 
 const ScreenOne = () => {
   const router = useRouter();
