@@ -1,14 +1,22 @@
-import { View, Text, Image, ImageSourcePropType } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  ImageSourcePropType,
+  TouchableOpacity,
+} from "react-native";
 import React from "react";
+import { router } from "expo-router";
 
 interface Props {
   icon: ImageSourcePropType;
   title: string;
   color?: string;
+  nextRoute?: string;
 }
-const ProfileInfo = ({ icon, title, color }: Props) => {
+const ProfileInfo = ({ icon, title, color, nextRoute }: Props) => {
   return (
-    <View>
+    <TouchableOpacity onPress={() => router.push(nextRoute)}>
       <View className="flex-row justify-between p-4 mt-6 border-b border-gray-300 ">
         <View className="flex-row gap-4 ">
           <Image source={icon} resizeMode="contain" />
@@ -21,7 +29,7 @@ const ProfileInfo = ({ icon, title, color }: Props) => {
           resizeMode="contain"
         />
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

@@ -84,6 +84,7 @@ const _layout = () => {
           tabBarActiveTintColor: "#3A95D2",
         }}
       />
+      <Tabs.Screen name="profile/UpdateProfile" options={{ href: null }} />
     </Tabs>
   );
 };
