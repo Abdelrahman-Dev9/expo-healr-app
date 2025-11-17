@@ -53,7 +53,10 @@ const HealthInsurance = () => {
           </Text>
         </View>
       </View>
-      <TouchableOpacity className="border border-[#EF4444] p-4 mt-8 rounded-[15px]">
+      <TouchableOpacity
+        className="border border-[#EF4444] p-4 mt-8 rounded-[15px]"
+        onPress={() => router.push("/(tabs)/profile/EmptyHealthInsurance")}
+      >
         <Text className="text-[#EF4444] text-center font-bold text-[17px]">
           Remove Health Insurance
         </Text>
