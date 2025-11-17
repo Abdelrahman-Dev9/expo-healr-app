@@ -32,7 +32,9 @@ const ForgetPassword = () => {
         </View>
         <TouchableOpacity
           className="bg-[#3A95D2] rounded-[10px] p-4 items-center mt-10"
-          onPress={() => router.push("")}
+          onPress={() =>
+            router.push("/(auth)/forget-password/VerificationCode")
+          }
         >
           <Text className="font-bold text-[18px] text-white">Next</Text>
         </TouchableOpacity>
