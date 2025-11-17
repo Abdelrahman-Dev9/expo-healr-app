@@ -3,19 +3,17 @@ import React from "react";
 import { useRouter } from "expo-router";
 import OnBoardingScreen from "@/components/OnBoardingScreen";
 
-const ScreenOne = () => {
+const ScreenTwo = () => {
   const router = useRouter();
   return (
     <View>
       <OnBoardingScreen
-        backgroundImage={require("assets/images/Frame 27 (1).png")}
-        backgroundImage1={require("assets/images/doctor-man.png")}
-        backgroundImage2={require("assets/images/doctor-woman.png")}
-        icon={require("assets/icons/progress indicator 1 (1).png")}
+        backgroundImage1={require("assets/images/doctor-woman-2.png")}
+        icon={require("assets/icons/progress indicator 1 (2).png")}
         nextPage={() => router.push("/(onBoarding)/ScreenTwo")}
       />
     </View>
   );
 };
 
-export default ScreenOne;
+export default ScreenTwo;

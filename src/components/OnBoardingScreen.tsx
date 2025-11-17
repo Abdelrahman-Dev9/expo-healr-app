@@ -10,16 +10,20 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 interface Props {
+  backgroundImage?: ImageSourcePropType;
   backgroundImage1: ImageSourcePropType;
   backgroundImage2?: ImageSourcePropType;
   icon: ImageSourcePropType;
   nextPage: () => void;
+  stylingLeft?: string;
 }
 const OnBoardingScreen = ({
+  backgroundImage,
   backgroundImage1,
   backgroundImage2,
   icon,
   nextPage,
+  stylingLeft,
 }: Props) => {
   return (
     <SafeAreaView className="mt-5">
@@ -41,17 +45,17 @@ const OnBoardingScreen = ({
         </Text>
       </View>
       {/* background Image  */}
-      <View className="flex-row justify-center  mt-[80px]">
+      <View className="flex-row justify-center  mt-[80px] ">
         <ImageBackground
-          source={require("assets/images/Frame 27 (1).png")}
-          className="w-[280px] h-[270px] "
+          source={backgroundImage}
+          className="w-[280px] h-[270px]"
           resizeMode="contain"
         >
           <View className="flex-row ml-[95px] mt-10">
             <Image
               source={backgroundImage1}
               resizeMode="contain"
-              className="w-[230px] h-[300px] absolute left-[-120] "
+              className={`w-[230px] h-[300px] absolute left-[-120px] `}
               style={{ zIndex: 10 }}
             />
             <Image
