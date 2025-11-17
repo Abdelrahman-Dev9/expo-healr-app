@@ -8,6 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useRouter } from "expo-router";
 
 interface Props {
   backgroundImage?: ImageSourcePropType;
@@ -23,8 +24,8 @@ const OnBoardingScreen = ({
   backgroundImage2,
   icon,
   nextPage,
-  stylingLeft,
 }: Props) => {
+  const router = useRouter();
   return (
     <SafeAreaView className="mt-5">
       {/* header screen */}
@@ -40,9 +41,11 @@ const OnBoardingScreen = ({
             <Text className="text-[#EE574A]"> Healthcare</Text>
           </Text>
         </View>
-        <Text className="mt-5 font-semibold text-[18px] text-[#1C567D]">
-          Skip
-        </Text>
+        <TouchableOpacity onPress={() => router.push("/(auth)/SignUp")}>
+          <Text className="mt-5 font-semibold text-[18px] text-[#1C567D]">
+            Skip
+          </Text>
+        </TouchableOpacity>
       </View>
       {/* background Image  */}
       <View className="flex-row justify-center  mt-[80px] ">

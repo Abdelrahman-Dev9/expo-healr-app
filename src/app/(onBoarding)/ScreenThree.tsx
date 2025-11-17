@@ -9,7 +9,7 @@ const ScreenThree = () => {
     <OnBoardingScreen
       backgroundImage1={require("assets/images/clock.png")}
       icon={require("assets/icons/progress indicator 1 (3).png")}
-      nextPage={() => router.push("/(onBoarding)/ScreenTwo")}
+      nextPage={() => router.push("/(auth)/SignUp")}
     />
   );
 };
