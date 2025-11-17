@@ -85,6 +85,7 @@ const _layout = () => {
         }}
       />
       <Tabs.Screen name="profile/UpdateProfile" options={{ href: null }} />
+      <Tabs.Screen name="profile/HealthInsurance" options={{ href: null }} />
     </Tabs>
   );
 };
