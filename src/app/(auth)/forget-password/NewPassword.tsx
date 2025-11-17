@@ -88,7 +88,7 @@ const NewPassword = () => {
       </View>
       <TouchableOpacity
         className="bg-[#3A95D2] rounded-[10px] p-4 items-center mt-10"
-        onPress={() => router.push("/(auth)/forget-password/VerificationCode")}
+        onPress={() => router.push("/(auth)/forget-password/BackLogin")}
       >
         <Text className="font-bold text-[18px] text-white">Reset Password</Text>
       </TouchableOpacity>
