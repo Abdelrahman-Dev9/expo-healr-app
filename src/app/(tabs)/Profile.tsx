@@ -41,7 +41,7 @@ const Profile = () => {
         <ProfileInfo
           icon={require("assets/icons/profile-clock.png")}
           title="Medical History"
-          nextRoute={"/(tabs)/ChatBot"}
+          nextRoute={"/(tabs)/profile/MedicalHistory"}
         />
         <ProfileInfo
           icon={require("assets/icons/profile-help.png")}
