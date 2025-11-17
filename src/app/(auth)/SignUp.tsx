@@ -1,6 +1,7 @@
 import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { router } from "expo-router";
 
 const SignUp = () => {
   return (
@@ -60,8 +61,11 @@ const SignUp = () => {
           />
         </View>
       </View>
-      <TouchableOpacity className="bg-[#3A95D2] rounded-full p-4 items-center mt-10">
-        <Text className="font-semibold text-white">Sign up</Text>
+      <TouchableOpacity
+        className="bg-[#3A95D2] rounded-full p-4 items-center mt-10"
+        onPress={() => router.push("/(auth)/Login")}
+      >
+        <Text className="font-semibold text-[18px] text-white">Sign up</Text>
       </TouchableOpacity>
       <View className="flex-row items-center justify-center mt-8">
         <Text className="text-[16px]">Already have an account?</Text>
