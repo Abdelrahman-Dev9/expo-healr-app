@@ -10,7 +10,7 @@ const ScreenTwo = () => {
       <OnBoardingScreen
         backgroundImage1={require("assets/images/doctor-woman-2.png")}
         icon={require("assets/icons/progress indicator 1 (2).png")}
-        nextPage={() => router.push("/(onBoarding)/ScreenTwo")}
+        nextPage={() => router.push("/(onBoarding)/ScreenThree")}
       />
     </View>
   );
