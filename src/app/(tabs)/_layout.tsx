@@ -90,6 +90,7 @@ const _layout = () => {
         name="profile/EmptyHealthInsurance"
         options={{ href: null }}
       />
+      <Tabs.Screen name="profile/PrivacyPolicies" options={{ href: null }} />
       <Tabs.Screen name="profile/MedicalHistory" options={{ href: null }} />
       <Tabs.Screen
         name="profile/Help Center/ContactUs"

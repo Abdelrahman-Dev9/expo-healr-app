@@ -51,7 +51,7 @@ const Profile = () => {
         <ProfileInfo
           icon={require("assets/icons/profile-lock.png")}
           title="Privacy Policy"
-          nextRoute={"/(tabs)/ChatBot"}
+          nextRoute={"/(tabs)/profile/PrivacyPolicies"}
         />
         <ProfileInfo
           icon={require("assets/icons/profile-log-out.png")}
