@@ -46,7 +46,7 @@ const Profile = () => {
         <ProfileInfo
           icon={require("assets/icons/profile-help.png")}
           title="Help Center"
-          nextRoute={"/(tabs)/ChatBot"}
+          nextRoute={"/(tabs)/profile/Help Center/Index"}
         />
         <ProfileInfo
           icon={require("assets/icons/profile-lock.png")}

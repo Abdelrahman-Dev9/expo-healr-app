@@ -91,6 +91,12 @@ const _layout = () => {
         options={{ href: null }}
       />
       <Tabs.Screen name="profile/MedicalHistory" options={{ href: null }} />
+      <Tabs.Screen
+        name="profile/Help Center/ContactUs"
+        options={{ href: null }}
+      />
+      <Tabs.Screen name="profile/Help Center/FAQs" options={{ href: null }} />
+      <Tabs.Screen name="profile/Help Center/Index" options={{ href: null }} />
     </Tabs>
   );
 };
