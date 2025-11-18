@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { router } from "expo-router";
 import FaqsCard from "@/components/FaqsCard";
+import ContactUs from "@/components/ContactUs";
 
 const Index = () => {
   const [contact, setContact] = useState(false);
@@ -86,7 +87,23 @@ const Index = () => {
         </ScrollView>
       ) : (
         <>
-          <Text>hello</Text>
+          <ContactUs
+            icon={require("assets/icons/customer-service (1).png")}
+            title="Customer Service"
+          />
+          <ContactUs
+            icon={require("assets/icons/Email.png")}
+            title="Email us"
+          />
+          <ContactUs
+            icon={require("assets/icons/facebook.png")}
+            title="Facebook"
+          />
+          <ContactUs icon={require("assets/icons/x.png")} title="X" />
+          <ContactUs
+            icon={require("assets/icons/instagram.png")}
+            title="Instagram"
+          />
         </>
       )}
     </SafeAreaView>
