@@ -96,6 +96,9 @@ const _layout = () => {
       <Tabs.Screen name="home/HealthInsurance" options={{ href: null }} />
       <Tabs.Screen name="home/BookingAppointment" options={{ href: null }} />
       <Tabs.Screen name="home/DoctorInformation" options={{ href: null }} />
+      <Tabs.Screen name="home/PatientDetails" options={{ href: null }} />
+      <Tabs.Screen name="home/BookingSummery" options={{ href: null }} />
+      <Tabs.Screen name="home/BookingSummerySuccess" options={{ href: null }} />
       <Tabs.Screen
         name="home/HealthInsuranceSuccess"
         options={{ href: null }}

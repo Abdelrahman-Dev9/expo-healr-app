@@ -283,7 +283,7 @@ const DoctorInformation = () => {
 
           <TouchableOpacity
             className="bg-[#3A95D2] rounded-[15px] p-4 items-center mt-[90px]"
-            onPress={() => router.push("/(tabs)/Home")}
+            onPress={() => router.push("/(tabs)/home/PatientDetails")}
           >
             <Text className="font-bold text-[18px] text-white">
               Make Appointment
