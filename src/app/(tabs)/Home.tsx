@@ -39,21 +39,26 @@ const Home = () => {
           resizeMode="contain"
         />
       </View>
-      <View className="mt-4 rounded-[15px] p-5 bg-[#1C567D] flex-row items-center gap-5 justify-between">
-        <View>
-          <Text className="text-[16px] text-[#F8F8F8] font-semibold">
-            Add your Health Insurance Card
-          </Text>
-          <Text className="mt-2 text-[12px] text-[#F2F2F2]">
-            Book now and save consultation fees with insurance.
-          </Text>
+      <TouchableOpacity
+        onPress={() => router.push("/(tabs)/home/HealthInsurance")}
+      >
+        <View className="mt-4 rounded-[15px] p-5 bg-[#1C567D] flex-row items-center gap-5 justify-between">
+          <View>
+            <Text className="text-[16px] text-[#F8F8F8] font-semibold">
+              Add your Health Insurance Card
+            </Text>
+            <Text className="mt-2 text-[12px] text-[#F2F2F2]">
+              Book now and save consultation fees with insurance.
+            </Text>
+          </View>
+          <Image
+            source={require("assets/icons/add-circle.png")}
+            className="w-[40px] h-[40px]"
+            resizeMode="contain"
+          />
         </View>
-        <Image
-          source={require("assets/icons/add-circle.png")}
-          className="w-[40px] h-[40px]"
-          resizeMode="contain"
-        />
-      </View>
+      </TouchableOpacity>
+
       <Text className="mt-6 text-[18px] font-semibold">
         What Would You Like to Do?
       </Text>
