@@ -71,7 +71,7 @@ const DoctorCard = ({
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => router.push("/(tabs)/home/BookingAppointment")}
+          onPress={() => router.push("/(tabs)/home/DoctorInformation")}
         >
           <Text className="text-[14px] font-semibold bg-[#3A95D2] text-white py-3 px-6 rounded-[15px]">
             Book now
