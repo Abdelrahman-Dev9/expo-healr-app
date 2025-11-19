@@ -43,7 +43,9 @@ const HealthInsuranceSuccess = () => {
               Go to Profile
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => router.push("/(tabs)/home/BookingAppointment")}
+          >
             <Text className="text-[14px] bg-[#3A95D2] text-white py-3 px-6 rounded-[15px]">
               Book an appointment
             </Text>
