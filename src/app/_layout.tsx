@@ -1,4 +1,4 @@
-import "../global.css";
+import { Provider } from "react-redux";
 import "../global.css";
 import { Slot } from "expo-router";
 
